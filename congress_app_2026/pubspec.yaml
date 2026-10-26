@@ -1,0 +1,57 @@
+name: congress_app_2026
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  webview_flutter: ^4.14.1
+  webview_flutter_web: ^0.2.3+4
+  url_launcher: ^6.3.3
+  google_fonts: ^9.0.0
+  flutter_tts: ^4.2.5
+  shared_preferences: ^2.5.6
+  flutter_local_notifications: 19.0.0
+  timezone: ^0.10.1
+  http: ^1.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+
+  fonts:
+    - family: Lexend
+      fonts:
+        - asset: fonts/Lexend-VariableFont_wght.ttf
+    - family: OpenDyslexic
+      fonts:
+        - asset: fonts/OpenDyslexic-Regular.otf
+        - asset: fonts/OpenDyslexic-Bold.otf
+          weight: 700
+
+# This must be at the far left, NOT inside the "flutter:" section above.
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/creek_together_icon.png"
+  adaptive_icon_background: "#0B1226"
+  adaptive_icon_foreground: "assets/creek_together_icon.png"
+  web:
+    generate: true
+    image_path: "assets/creek_together_icon.png"
+  
